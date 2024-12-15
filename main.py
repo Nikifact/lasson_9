@@ -9,7 +9,6 @@ else:
 message =  input("Введите сообщение: ").lower()
 chipher = []
 result = ''
-ALPHABET = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
 step = int(input("Введите шаг кодиовки: "))
 for symbol in message:
     chipher.append(ALPHABET.find(symbol) + step)
