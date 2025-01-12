@@ -1,3 +1,7 @@
+chipher = []
+result = ''
+
+
 lang = input("Выберите язык (ру - русский, en - английский): ")
 if lang == "ру":
     ALPHABET = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
@@ -7,8 +11,6 @@ else:
     print("Выбран неподдерживаемый язык. Используется русский алфавит по умолчанию.")
     ALPHABET = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
 message =  input("Введите сообщение: ").lower()
-chipher = []
-result = ''
 step = int(input("Введите шаг кодиовки: "))
 for symbol in message:
     chipher.append(ALPHABET.find(symbol) + step)
